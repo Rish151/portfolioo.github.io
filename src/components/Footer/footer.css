@@ -1,0 +1,91 @@
+.footer {
+  width: 100vw;
+  height: 4rem;
+  background: rgb(21, 21, 21);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: medium;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1500px) {
+  .footer {
+    height: 3.8rem;
+    font-size: 0.95rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1325px) {
+  .footer {
+    height: 3.6rem;
+    font-size: 0.9rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .footer {
+    height: 3.4rem;
+    font-size: 0.85rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    height: 3.2rem;
+    font-size: 0.8rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    height: 3rem;
+    font-size: 0.75rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .footer {
+    height: 2.8rem;
+    font-size: 0.7rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .footer {
+    height: 2.6rem;
+    font-size: 0.65rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .footer {
+    height: 2.4rem;
+    font-size: 0.6rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .footer {
+    height: 2.2rem;
+    font-size: 0.55rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .footer {
+    height: 2rem;
+    font-size: 0.5rem;
+    width: auto;
+  }
+}

@@ -1,0 +1,209 @@
+.about-section {
+  background: black;
+  color: white;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1800rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  max-width: 1700px;
+  width: 100%;
+}
+
+.about-left {
+  flex: 0.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15rem;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.about-right {
+  flex: 2.8;
+  padding-left: 10rem;
+}
+
+.about-right h1 {
+  font-size: 5rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+}
+
+.about-right .highlight {
+  color: #f95454; /* Use your preferred highlight color */
+}
+
+.about-right p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background: #f95454; /* Button background color */
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+  text-decoration: none; /* Remove underline from link */
+  display: inline-block; /* Ensure the button has the correct box model */
+}
+
+.btn:hover {
+  background: #d14747; /* Darker shade for hover effect */
+}
+
+/* Media Queries */
+@media screen and (max-width: 1500px) {
+  .about-left {
+    padding-left: 10rem;
+  }
+  .btn {
+    padding: 0.7rem 1.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 1325px) {
+  .about-left {
+    display: none;
+  }
+  .about-right {
+    padding-left: 2rem;
+  }
+  .btn {
+    padding: 0.65rem 1.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-right {
+    padding-left: 1rem;
+  }
+  .about-right h1 {
+    font-size: 3rem;
+  }
+  .about-right p {
+    font-size: 1.5rem;
+  }
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-right {
+    padding-left: 1.5rem;
+  }
+  .about-right h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .btn {
+    padding: 0.55rem 1.3rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .about-right {
+    padding-left: 2.5rem;
+  }
+  .about-right h1 {
+    font-size: 2rem;
+  }
+  .about-right p {
+    font-size: larger;
+  }
+  .btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .about-right {
+    padding-left: 2.4rem;
+  }
+  .about-right h1 {
+    font-size: 2rem;
+  }
+  .about-right p {
+    font-size: medium;
+  }
+  .btn {
+    padding: 0.45rem 1rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .about-right {
+    padding-left: 2rem;
+  }
+  .about-right h1 {
+    font-size: 2rem;
+  }
+  .about-right p {
+    font-size: medium;
+  }
+  .btn {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.65rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .about-right {
+    padding-left: 2rem;
+  }
+}
+@media screen and (max-width: 485px) {
+  .about-right {
+    padding-left: 2rem;
+  }
+  .about-right h1 {
+    font-size: 1.5rem;
+  }
+  .about-right p {
+    font-size: medium;
+  }
+  .btn {
+    padding: 0.35rem 0.8rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .about-right {
+    padding-left: 2rem;
+  }
+  .about-right h1 {
+    font-size: 1.3rem;
+  }
+  .about-right p {
+    font-size: small;
+  }
+  .btn {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.55rem;
+  }
+}

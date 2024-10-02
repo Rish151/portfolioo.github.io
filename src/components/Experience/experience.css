@@ -1,0 +1,301 @@
+/* General styles */
+body {
+  background-color: #000; /* Black background */
+  color: #fff; /* White font color */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.experience {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.experience-heading {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 200;
+}
+
+.experience-title {
+  font-size: 5rem;
+  margin: 10px 0 50px 0;
+  font-weight: 600;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.experience-card {
+  background-color: #111; /* Slightly lighter than black for contrast */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 25px; /* Adjust margin as needed */
+  width: 600px; /* Adjust width as needed */
+  height: 470px; /* Adjust height as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.experience-card:hover {
+  transform: scale(1.15); /* Increase size on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Increase shadow on hover */
+}
+
+.experience-card h3 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.experience-card:hover h3 {
+  color: #f95454; /* Change color of h3 on hover */
+}
+
+.experience-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-card li {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  /* Add space between the icon and the text */
+}
+
+.experience-card li svg {
+  margin-right: 15px; /* Adjust this value to increase or decrease the space */
+}
+
+.experience-card li span {
+  margin-left: auto;
+  font-size: 1.3rem;
+  color: #bbb; /* Lighter color for experience level */
+}
+
+/* Media Queries */
+@media screen and (max-width: 1500px) {
+  .experience-heading {
+    font-size: 2rem;
+  }
+  .experience-title {
+    font-size: 4.8rem;
+  }
+  .experience-card {
+    width: 500px;
+    height: 350px;
+  }
+  .experience-card h3 {
+    font-size: 2.5rem;
+  }
+  .experience-card li {
+    font-size: 1.6rem;
+  }
+  .experience-card li span {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 1325px) {
+  .experience-heading {
+    font-size: 1.8rem;
+  }
+  .experience-title {
+    font-size: 4.3rem;
+  }
+  .experience-card {
+    width: 450px;
+    height: 320px;
+  }
+  .experience-card h3 {
+    font-size: 2.3rem;
+  }
+  .experience-card li {
+    font-size: 1.5rem;
+  }
+  .experience-card li span {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .experience-heading {
+    font-size: 1.6rem;
+  }
+  .experience-title {
+    font-size: 3.8rem;
+  }
+  .experience-card {
+    width: 400px;
+    height: 300px;
+  }
+  .experience-card h3 {
+    font-size: 2rem;
+  }
+  .experience-card li {
+    font-size: 1.4rem;
+  }
+  .experience-card li span {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .experience-heading {
+    font-size: 1.6rem;
+  }
+  .experience-title {
+    font-size: 3.7rem;
+  }
+  .experience-card {
+    width: 400px;
+    height: 300px;
+  }
+  .experience-card h3 {
+    font-size: 2rem;
+  }
+  .experience-card li {
+    font-size: 1.4rem;
+  }
+  .experience-card li span {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .experience-heading {
+    font-size: 1.4rem;
+  }
+  .experience-title {
+    font-size: 3.3rem;
+  }
+  .experience-card {
+    width: 350px;
+    height: 270px;
+  }
+  .experience-card h3 {
+    font-size: 1.8rem;
+  }
+  .experience-card li {
+    font-size: 1.2rem;
+  }
+  .experience-card li span {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .experience-heading {
+    font-size: 1.2rem;
+  }
+  .experience-title {
+    font-size: 2.8rem;
+  }
+  .experience-card {
+    width: 300px;
+    height: 250px;
+  }
+  .experience-card h3 {
+    font-size: 1.6rem;
+  }
+  .experience-card li {
+    font-size: 1rem;
+  }
+  .experience-card li span {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .experience-heading {
+    font-size: 1.1rem;
+  }
+  .experience-title {
+    font-size: 2.3rem;
+  }
+  .experience-card {
+    width: 250px;
+    height: 220px;
+  }
+  .experience-card h3 {
+    font-size: 1.4rem;
+  }
+  .experience-card li {
+    font-size: 0.9rem;
+  }
+  .experience-card li span {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .experience-heading {
+    font-size: 1rem;
+  }
+  .experience-title {
+    font-size: 2.3rem;
+  }
+  .experience-card {
+    width: 250px;
+    height: 220px;
+  }
+  .experience-card h3 {
+    font-size: 1.3rem;
+  }
+  .experience-card li {
+    font-size: 0.9rem;
+  }
+  .experience-card li span {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .experience-heading {
+    font-size: 0.9rem;
+  }
+  .experience-title {
+    font-size: 2rem;
+  }
+  .experience-card {
+    width: 220px;
+    height: 200px;
+  }
+  .experience-card h3 {
+    font-size: 1.2rem;
+  }
+  .experience-card li {
+    font-size: 0.8rem;
+  }
+  .experience-card li span {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .experience-heading {
+    font-size: 0.8rem;
+  }
+  .experience-title {
+    font-size: 1.7rem;
+  }
+  .experience-card {
+    width: 240px;
+    height: 210px;
+  }
+  .experience-card h3 {
+    font-size: 1rem;
+  }
+  .experience-card li {
+    font-size: 0.7rem;
+  }
+  .experience-card li span {
+    font-size: 0.4rem;
+  }
+}

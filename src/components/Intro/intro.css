@@ -1,0 +1,144 @@
+#intro {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 100rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  transform: translateX(0.1rem);
+  z-index: -1;
+  object-fit: cover;
+  height: 90vh;
+  width: 100vw;
+}
+
+.introContent {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 200;
+}
+
+.introName {
+  color: #d14747;
+}
+
+.introPara {
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.btn {
+  background: white;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  background: #f95454;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d14747;
+}
+
+/* Media Queries */
+@media screen and (max-width: 920px) {
+  .bg {
+    display: none;
+  }
+  .introContent {
+    font-size: 10vw;
+  }
+  .hello {
+    font-size: 4.5vw;
+  }
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  /* .bg {
+    right: 0;
+    height: 100%;
+    width: 100%;
+  } */
+}
+
+@media screen and (max-width: 550px) {
+  /* .bg {
+    right: 0;
+    height: 100%;
+    width: 100%;
+  } */
+  .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hello {
+    font-size: 1.75rem;
+    font-weight: 200;
+  }
+  .introPara {
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .bg {
+    display: none;
+  }
+  .btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hello {
+    font-size: 1.75rem;
+    font-weight: 200;
+  }
+  .introPara {
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  /* .bg {
+    width: 450px;
+    height: 600px;
+  } */
+  .btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.5rem;
+  }
+}

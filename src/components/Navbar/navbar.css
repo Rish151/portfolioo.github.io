@@ -1,0 +1,141 @@
+.navbar {
+  height: 5rem;
+  width: 100%;
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  background-color: black;
+}
+
+.logo {
+  object-fit: cover;
+  height: 5rem;
+  width: auto;
+  cursor: pointer;
+}
+
+.desktopMenu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.desktopMenuListItem {
+  margin: 2rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.desktopMenuListItem:hover {
+  color: #d14747;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #d14747;
+}
+
+.desktopMenuBtn {
+  border: none;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+}
+
+.active {
+  color: #d14747;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #d14747;
+}
+
+.mobMenu {
+  display: none;
+  object-fit: cover;
+  height: 2.5rem;
+}
+
+.navMenu {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: black;
+  border-radius: 1rem;
+}
+
+.ListItem {
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background: rgb(20, 20, 20);
+}
+
+@media screen and (max-width: 935px) {
+  .mobMenu {
+    display: flex;
+    position: fixed; /* Ensure it stays in the right position */
+    right: 1rem; /* Align it to the right */
+    margin-top: 3rem;
+  }
+  .desktopMenu {
+    display: none;
+  }
+  .desktopMenuBtn {
+    display: none;
+  }
+  .logo {
+    height: 3rem; /* Adjust the height for smaller screens */
+    width: auto; /* Maintain the aspect ratio */
+    position: fixed;
+    left: 1rem; /* Align it to the left */
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .logo {
+    height: 3rem; /* Adjust the height for smaller screens */
+    width: auto; /* Maintain the aspect ratio */
+    position: fixed;
+    left: 1rem; /* Align it to the left */
+  }
+  .mobMenu {
+    display: flex;
+    position: fixed; /* Ensure it stays in the right position */
+    right: 1rem; /* Align it to the right */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    height: 3.5rem; /* Adjust the height for even smaller screens */
+    left: 0.5rem; /* Further adjust position for left alignment */
+  }
+  .mobMenu {
+    right: 0.5rem; /* Further align it closer to the right edge */
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .logo {
+    height: 3rem; /* Adjust the height for very small screens */
+    left: 0.3rem; /* Further adjust position for left alignment */
+  }
+  .mobMenu {
+    right: 0.3rem; /* Further align it closer to the right edge */
+    margin-top: 2.7rem;
+  }
+}
