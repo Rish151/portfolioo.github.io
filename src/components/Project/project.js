@@ -29,7 +29,7 @@ const Project = () => {
       title: "IT Services Web Application",
       description:
         "Developed with the MERN stack, utilizing Custom hooks, Local Storage, and Context API for enhanced functionality.", 
-      link: "#",
+      link: "https://technicaltwist.netlify.app/",
     },
     {
       image: photo2,
